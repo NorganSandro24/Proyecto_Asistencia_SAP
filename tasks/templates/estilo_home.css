@@ -1,6 +1,6 @@
 /* Estilo para el fondo de la página */
 .container {
-  background-image: url('ruta/de/la/imagen.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+  background-image: url('{% static 'tasks/imagenes/home_img.png' %}');
   background-size: cover;
   background-position: center;
   padding: 20px; /* Añade un espacio alrededor del contenido */
