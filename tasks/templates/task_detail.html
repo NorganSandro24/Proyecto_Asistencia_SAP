@@ -11,21 +11,21 @@
   {{form.as_p}}
 
   <button>
-    Update
+    Actualizar
   </button>
 </form>
 
 <form action="{% url 'complete_task' task.id %}" method="POST">
   {% csrf_token %}
   <button>
-    complete
+    Completado
   </button>
 </form>
 
 <form action="{% url 'delete_task' task.id %}" method="POST">
   {% csrf_token %}
   <button>
-    delete
+    Borrar
   </button>
 </form>
 
