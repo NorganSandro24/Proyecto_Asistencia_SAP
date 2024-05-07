@@ -1,10 +1,19 @@
 {% extends 'base.html' %} {# Extiende la plantilla base.html #}
+
 {% block content %} {# Define un bloque llamado "content" que puede ser sobrescrito en plantillas que extiendan esta #}
 <div class="container">
-  <h1>INICIO</h1>  {# Encabezado 1 que dice "INICIO" #}
+  <h1>Oficina de Tecnologías de la Información</h1>
+  <h2>Misión</h2>
   <p>
-    La Municipalidad Distrital de San Jerónimo ha establecido un sistema de asistencia para practicantes con el objetivo primordial de fortalecer la transparencia, eficiencia y control en el desarrollo de las prácticas profesionales en nuestra institución. Este sistema se crea en respuesta a la necesidad de garantizar un seguimiento preciso de la asistencia y el desempeño de los practicantes, asegurando así un ambiente de trabajo óptimo y una experiencia formativa integral para los estudiantes. Además, busca fomentar una cultura organizacional basada en la responsabilidad y el compromiso, promoviendo valores que contribuyan al crecimiento personal y profesional de los practicantes, así como al cumplimiento de los objetivos institucionales en beneficio de la comunidad de San Jerónimo</p>
+    Gestionar de manera eficiente y eficaz los recursos tecnológicos de la Municipalidad Distrital de San Jerónimo, a fin de apoyar el cumplimiento de sus objetivos estratégicos y brindar un servicio de calidad a las diferentes oficinas pertenecientes a la Municipalidad.
+  </p>
+  <h2>Visión</h2>
+  <p>
+    Ser una oficina líder en la gestión de tecnologías de la información, reconocida por su eficiencia e innovación, y que contribuya al desarrollo sostenible de la Municipalidad de San Jerónimo.
+  </p>
 </div>
 {% endblock %} {# Termina el bloque "content" #}
 
-
+{% block extrastyles %} {# Nuevo bloque para cargar CSS adicional #}
+<link rel="stylesheet" type="text/css" href="{% static 'estilo_home.css' %}">
+{% endblock %}
