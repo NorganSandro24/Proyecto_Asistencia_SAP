@@ -1,31 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Selecciona el elemento con la clase "container"
-    var container = document.querySelector('.container');
-    
-    // Agrega la imagen de fondo
-    container.style.backgroundImage = 'url("ruta/de/la/imagen.jpg")'; // Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo
-    container.style.backgroundSize = 'cover';
-    container.style.backgroundPosition = 'center';
-    container.style.padding = '20px'; // Añade un espacio alrededor del contenido
-  
-    // Selecciona todos los elementos h1 dentro de "container" y les aplica estilos
-    var h1Elements = container.querySelectorAll('h1');
-    h1Elements.forEach(function(h1) {
-      h1.style.textAlign = 'center'; // Centra el texto
-      h1.style.fontWeight = 'bold'; // Hace que el texto esté en negrita
-      h1.style.margin = '20px 0'; // Añade un margen superior e inferior de 20px
-    });
-  
-    // Selecciona todos los elementos h2 dentro de "container" y les aplica estilos
-    var h2Elements = container.querySelectorAll('h2');
-    h2Elements.forEach(function(h2) {
-      h2.style.margin = '20px 0'; // Añade un margen superior e inferior de 20px
-    });
-  
-    // Selecciona todos los elementos p dentro de "container" y les aplica estilos
-    var pElements = container.querySelectorAll('p');
-    pElements.forEach(function(p) {
-      p.style.marginBottom = '20px'; // Añade un margen inferior de 20px
-    });
-  });
-  
+/* Estilo para el fondo de la página */
+.container {
+  background-image: url('ruta/de/la/imagen.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Añade un espacio alrededor del contenido */
+}
+
+/* Estilo para el título h1 */
+.container h1 {
+  text-align: center; /* Centra el texto */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  margin: 20px 0; /* Añade un margen superior e inferior de 20px */
+}
+
+/* Estilo para los subtítulos h2 */
+.container h2 {
+  margin: 20px 0; /* Añade un margen superior e inferior de 20px */
+}
+
+/* Estilo para los párrafos */
+.container p {
+  margin-bottom: 20px; /* Añade un margen inferior de 20px */
+}
